@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recommended Roles</title>
+</head>
+<body>
+    <h1>Top Job Recommendations</h1>
+    <ul>
+        {% for role, score in roles %}
+        <li>{{ role }} - {{ score }}%</li>
+        {% endfor %}
+    </ul>
+    <a href="/">Go Back</a>
+</body>
+</html>
